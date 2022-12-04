@@ -9,6 +9,8 @@ services:
     depends_on:
       hardhat:
         condition: service_healthy
+
+    restart: always
     command:
       [
         "deploy",

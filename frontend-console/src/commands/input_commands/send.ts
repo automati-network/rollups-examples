@@ -98,6 +98,7 @@ export const handler = async (args: Args) => {
 
     // send transaction
     const tx = await inputContract.addInput(inputBytes);
+    console.log("inputContract", inputContract.address);
     console.log(`transaction: ${tx.hash}`);
     console.log("waiting for confirmation...");
     const receipt = await tx.wait(1);

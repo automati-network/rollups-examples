@@ -103,6 +103,7 @@ export const rollups = async (
         args.address ||
         readFromFile(args.addressFile) ||
         readDApp(args.dapp, chainId);
+    console.log("address", address);
 
     if (!address) {
         throw new Error("unable to resolve DApp address");

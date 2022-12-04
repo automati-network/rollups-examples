@@ -24,7 +24,7 @@ import "hardhat-gas-reporter";
 import "./tasks/auction/mint"
 
 // read MNEMONIC from file or from env variable
-let mnemonic = process.env.MNEMONIC;
+let mnemonic = "company loud estate century olive gun tribe pulse bread play addict amount";
 
 const alchemy = (
     network: string,
